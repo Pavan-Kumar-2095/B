@@ -10,7 +10,7 @@ app.use(cors({origin:'http://localhost:3000'}))
 
 app.use(express.json())   
 
-let uri = "mongodb://localhost:27017/gotham"
+let uri = "mongodb+srv://developer0exe:321321@insights.c5adzzl.mongodb.net/"
 mongoose.connect(uri)
 
 
