@@ -6,7 +6,9 @@ const app = express()
 const cors = require('cors')
 const port = process.env.PORT || 8000
 
-app.use(cors({origin:'https://frontend-w71v-24t5ku9kh-pavan-kumar-2095s-projects.vercel.app/'}))
+app.use(cors({
+    origin: 'https://frontend-w71v.vercel.app' 
+  }));
 
 app.use(express.json())   
 
