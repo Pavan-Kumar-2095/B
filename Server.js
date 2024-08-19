@@ -13,7 +13,7 @@ app.use(cors({
 
 app.use(express.json())   
 
-let uri = "mongodb+srv://developer0exe:321321@insights.c5adzzl.mongodb.net/"
+let uri = `mongodb+srv://developer0exe:${API_KEY}@insights.c5adzzl.mongodb.net/`
 mongoose.connect(uri)
 
 
