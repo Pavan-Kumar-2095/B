@@ -25,7 +25,7 @@ const upload = multer({ storage: storage }).single('file');
 
 
 app.use(cors({
-    origin: 'https://frontend-w71v.vercel.app/' 
+    origin: 'https://frontend-w71v.vercel.app' 
   }));
 
 app.use(express.json())   
