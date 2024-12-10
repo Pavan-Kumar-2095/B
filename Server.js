@@ -21,13 +21,6 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage }).single('file');
 
-
-
-
-app.use(cors({
-    origin: 'https://frontend-w71v.vercel.app' 
-  }));
-
 app.use(express.json())   
 
 let uri = `mongodb+srv://developer0exe:321321@insights.c5adzzl.mongodb.net/`
@@ -42,7 +35,7 @@ cloudinary.config({
 });
 
 const allowedOrigins = [
-  'http://localhost:3000',
+  'https://frontend-w71v.vercel.app',
 ];
 
 app.use(cors({
